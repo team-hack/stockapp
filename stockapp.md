@@ -10,6 +10,31 @@ The stock app is a clone of the Robinhood app.  We are making this because we li
 - Live news
 - Animations (Greensock, other cool animation libs)
 
-## Database 
+## Database (Entities / Model)
 
-## Needs
+See diagram:
+[UML](https://drive.google.com/file/d/1xo0qRE1HOA4jNApH2B_lKBY-iSpMh2nJ/view?usp=sharing)
+
+## Endpoints (Controller)
+
+| URL  | Purpose |CRUD Operations Supported|
+| --- | ---|---|
+|/ | Dashboard (Home) ||
+|/signup| | GET & POST|
+|/signin | |GET & POST|
+|/messages| |GET
+|/message | |POST
+|/message/{id} | | GET,POST,UPDATE,DELETE
+|/users | See all users | *
+|/stocks | See all stocks | *
+...
+
+## Services (Plugin)
+- API Services (Yahoo! Finance API)
+
+## Views
+- React on the front end 
+- Vue?
+- JQuery
+- Swift
+- Animations Greensock API 
