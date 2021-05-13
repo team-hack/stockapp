@@ -40,6 +40,7 @@ See diagram:
 - Vue?
 - JQuery
 - Swift
+- Android
 - Animations Greensock API
 
 ## Concepts
