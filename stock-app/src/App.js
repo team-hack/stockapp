@@ -1,10 +1,8 @@
-import './App.css';
+import "./App.css";
 // React router
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Pages
-import HomePage from './pages/home-page/home.page';
-import SignInPage from './pages/sign-in-page/sign-in.page';
-import LogInPage from './pages/log-in-page/log-in.page';
+import { Page } from "./components/Page";
 
 function App() {
   return (
@@ -28,13 +26,13 @@ function App() {
             </nav>
             <Switch>
               <Route exact path="/login">
-                <LogInPage />
+                <Page title="Log In" content="This is the login page" />
               </Route>
               <Route exact path="/signin">
-                <SignInPage />
+                <Page title="Sign In" content="This is the sign-in page" />
               </Route>
               <Route path="/">
-                <HomePage />
+                <Page title="Home" content="This is the home page" />
               </Route>
             </Switch>
           </div>
