@@ -1,7 +1,15 @@
 import React from "react";
 import "./page.css";
 
-const Page = ({ title = "Default Page", content = "Hello World" }) => {
+interface PageProps {
+  title: String;
+  content: String;
+}
+
+const Page: React.FC<PageProps> = ({
+  title = "Default Page",
+  content = "Hello World",
+}) => {
   return (
     <>
       <h2>{title}</h2>
