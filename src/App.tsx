@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Stock App</h1>
+        <h1 id="stock-app" title="main-heading">
+          Stock App
+        </h1>
         <Router>
           <div>
             <nav>

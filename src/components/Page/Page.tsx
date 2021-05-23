@@ -1,7 +1,7 @@
 import React from "react";
 import "./page.css";
 
-const Page = ({ title, content }) => {
+const Page = ({ title = "Default Page", content = "Hello World" }) => {
   return (
     <>
       <h2>{title}</h2>
