@@ -2,8 +2,8 @@ import React from "react";
 import "./page.css";
 
 interface PageProps {
-  title: String;
-  content: String;
+  title?: string;
+  content?: string;
 }
 
 const Page: React.FC<PageProps> = ({

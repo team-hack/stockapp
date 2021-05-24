@@ -23,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint --ignore-path .gitignore . --ext .ts",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|jsx|ts|json)\""
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,7 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.13.0",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
-    "@typescript-eslint/parser": "^4.24.0"
+    "@typescript-eslint/parser": "^4.24.0",
+    "prettier": "^2.3.0"
   }
 }
