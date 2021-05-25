@@ -28,7 +28,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts,.tsx",
     "check-format": "npm run prettier -- --list-different",
     "format": "npm run prettier -- --write",
-    "validate": "npm-run-all --parallel types check-format lint build"
+    "validate": "npm-run-all --parallel types check-format lint"
   },
   "eslintConfig": {
     "extends": [
