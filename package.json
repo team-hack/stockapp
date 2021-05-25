@@ -23,8 +23,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ignore-path .gitignore . --ext .ts",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|jsx|ts|json)\""
+    "types": "tsc",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|jsx|ts|json)\"",
+    "lint": "eslint --ignore-path .gitignore . --ext .js,.ts,.tsx",
+    "check-format": "npm run prettier -- --list-different",
+    "format": "npm run prettier -- --write",
+    "validate": "npm-run-all --parallel types check-format lint build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,8 +50,13 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.13.0",
+    "@types/react-router-dom": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.3.0"
   }
 }
