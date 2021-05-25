@@ -34,7 +34,7 @@ const App: React.FC = () => {
                 <Page title="Sign In" content="This is the sign-in page" />
               </Route>
               <Route path="/">
-                <Page title={0} content="This is the home page" />
+                <Page title={"Home"} content="This is the home page" />
               </Route>
             </Switch>
           </div>
