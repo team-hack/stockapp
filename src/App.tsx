@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Pages
 import { Page } from "./components/Page";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -34,7 +34,7 @@ function App() {
                 <Page title="Sign In" content="This is the sign-in page" />
               </Route>
               <Route path="/">
-                <Page title="Home" content="This is the home page" />
+                <Page title={"Home Page"} content="This is the home page" />
               </Route>
             </Switch>
           </div>
@@ -42,6 +42,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
