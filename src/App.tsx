@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // Pages
 import { Page } from "./components/Page";
+import HomePage from "./home";
 
 const App: React.FC = () => {
   return (
@@ -33,9 +34,7 @@ const App: React.FC = () => {
               <Route exact path="/signin">
                 <Page title="Sign In" content="This is the sign-in page" />
               </Route>
-              <Route path="/">
-                <Page title={"Home Page"} content="This is the home page" />
-              </Route>
+              <Route path="/" component={HomePage} />
             </Switch>
           </div>
         </Router>
