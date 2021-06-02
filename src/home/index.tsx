@@ -1,9 +1,8 @@
 import React from 'react';
 import reportWebVitals from '../reportWebVitals';
 
-const HomePage: React.FC = () => {
+const HomePage = (): JSX.Element => {
     return (
-        <React.StrictMode>
           <div>
               <p>
                   What is Stock App?
@@ -11,7 +10,6 @@ const HomePage: React.FC = () => {
               <h2>Tracker</h2>
               [ Import Tracker ]
           </div>
-        </React.StrictMode>
       );
       
       // If you want to start measuring performance in your app, pass a function
