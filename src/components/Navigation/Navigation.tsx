@@ -1,0 +1,1 @@
+const Navigation = () => <nav></nav>;
