@@ -9,7 +9,7 @@ interface PageProps {
 const Page = ({
   title = "Default Page",
   content = "Hello World",
-}: PageProps) => {
+}: PageProps): JSX.Element => {
   return (
     <>
       <h2>{title}</h2>

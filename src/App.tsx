@@ -4,14 +4,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Pages
 import { Page } from "./components/Page";
 // Navbar
-import { Header }  from "./components/header/header.component"
+import { Header } from "./components/Header";
 
-const App: React.FC = () => {
+const App = (): JSX.Element => {
   return (
     <div className="App">
-      
       <header className="App-header">
-        
         <Router>
           <div>
             <Header />
