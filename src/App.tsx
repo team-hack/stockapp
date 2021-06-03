@@ -1,37 +1,26 @@
 import "./App.css";
 // React router
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Pages
 import { Page } from "./components/Page";
+// Navbar
+import { Header }  from "./components/header/header.component"
 
 const App: React.FC = () => {
   return (
     <div className="App">
+      
       <header className="App-header">
-        <h1 id="stock-app" title="main-heading">
-          Stock App
-        </h1>
+        
         <Router>
           <div>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/signin">Sign In</Link>
-                </li>
-                <li>
-                  <Link to="/login">Log In</Link>
-                </li>
-              </ul>
-            </nav>
+            <Header />
             <Switch>
               <Route exact path="/login">
-                <Page title="Log In" content="This is the login page" />
+                <Page title="Login" content="This is the login page" />
               </Route>
-              <Route exact path="/signin">
-                <Page title="Sign In" content="This is the sign-in page" />
+              <Route exact path="/signup">
+                <Page title="Signup" content="This is the signup page" />
               </Route>
               <Route path="/">
                 <Page title={"Home Page"} content="This is the home page" />

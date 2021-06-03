@@ -1,0 +1,21 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background: white;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  margin-left: 40px;
+}
+
+.login {
+  margin-right: 20px;
+}
+
+.signup {
+  margin-right: 40px;
+}
