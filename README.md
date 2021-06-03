@@ -53,11 +53,13 @@ See diagram:
 
 When creating a component, be sure to follow this file and folder structure within `src/components`.
 
+```sh
 src/
-    components/
-        MyComponent/
-            **tests**/
-                MyComponent.test.tsx
-                MyComponent.tsx
-                MyComponentStyled.tsx
-                index.tsx
+ | components/
+    | MyComponent/
+    |   tests/
+    |    | MyComponent.test.tsx
+    | MyComponent.tsx
+    | MyComponentStyled.tsx
+    | index.tsx
+```
