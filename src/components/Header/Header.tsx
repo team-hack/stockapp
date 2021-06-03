@@ -10,7 +10,7 @@ import "./header.styles.css";
 
 const Header = (): JSX.Element => {
   return (
-    <HeaderMain>
+    <HeaderMain dark={false}>
       <div className="left">
         <Link className="logo" to="/">
           Stock App

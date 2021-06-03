@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-export const HeaderMain = styled.header`
+type HeaderMainProps = {
+  dark: boolean;
+};
+
+export const HeaderMain = styled.header<HeaderMainProps>`
   display: flex;
   align-items: center;
   height: 70px;
   width: 100%;
-  background: white;
+  background: ${(props) => (props.dark ? "black" : "white")};
   justify-content: space-between;
   color: white;
 `;
