@@ -6,7 +6,7 @@ import { Page } from "./components/Page";
 // Navbar
 import { Header } from "./components/Header";
 
-const App: React.FC = () => {
+const App = (): JSX.Element => {
   return (
     <div className="App">
       <header className="App-header">

@@ -8,7 +8,7 @@ import "./header.styles.css";
 
 // }
 
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
     <HeaderMain>
       <div className="left">
