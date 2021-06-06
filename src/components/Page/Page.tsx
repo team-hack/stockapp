@@ -6,10 +6,10 @@ interface PageProps {
   content?: string;
 }
 
-const Page: React.FC<PageProps> = ({
+const Page = ({
   title = "Default Page",
   content = "Hello World",
-}) => {
+}: PageProps): JSX.Element => {
   return (
     <>
       <h2>{title}</h2>

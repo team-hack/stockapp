@@ -48,3 +48,18 @@ See diagram:
 [Too Early Demo Repo](https://github.com/vijayxtreme/stock-app-demo)
 
 [Figma Design](https://www.figma.com/file/lR8osVzOIEQiaBUCiQM340/Stock-App?node-id=0%3A1)
+
+## Naming Files & Conventions
+
+When creating a component, be sure to follow this file and folder structure within `src/components`.
+
+```sh
+src/
+ | components/
+    | MyComponent/
+    |   tests/
+    |    | MyComponent.test.tsx
+    | MyComponent.tsx
+    | MyComponentStyled.tsx
+    | index.tsx
+```
