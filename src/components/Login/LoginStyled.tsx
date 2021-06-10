@@ -3,5 +3,6 @@ import styled from "styled-components";
 
 
 export const LoginMain = styled.h1`
-background-color:yellow;
+background-color:blue;
+
 `;
