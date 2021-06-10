@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Page } from "./components/Page";
 // Navbar
 import { Header } from "./components/Header";
-
+// Login
+import { Login } from "./components/Login"
 const App = (): JSX.Element => {
   return (
     <div className="App">
@@ -13,9 +14,11 @@ const App = (): JSX.Element => {
         <Router>
           <div>
             <Header />
+            
             <Switch>
               <Route exact path="/login">
                 <Page title="Login" content="This is the login page" />
+                <Login />
               </Route>
               <Route exact path="/signup">
                 <Page title="Signup" content="This is the signup page" />
