@@ -63,3 +63,8 @@ src/
     | MyComponentStyled.tsx
     | index.tsx
 ```
+## Getting Setup 
+
+### Installing SSH
+
+First step make sure you have a ssh key. If you are unsure you can use this [tutorial](https://gorails.com/setup/osx/11.0-big-sur#git) to get you started. 
