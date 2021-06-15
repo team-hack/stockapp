@@ -6,15 +6,24 @@ import React, {
 
 import "./Signup.css";
 
-const Signup = (): JSX.Element => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+const Signup = () => {
+  const formState = {
+    email: '',
+    password: ''
+  };
+
+  const [form, setForm] = useState(formState);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    if( event.target.name == "email") {
-      setEmail( event.target.value );
+    const { name, value } = event.target;
+    if (name == "email") {
+      setForm( current => {
+        return { ...current, email: value };
+      });
     } else {
-      setPassword( event.target.value );
+      setForm( current => {
+        return { ...current, password: value };
+      });
     }
   };
 
