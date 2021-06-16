@@ -3,3 +3,4 @@ build
 public
 .github
 .DS_Store
+.env

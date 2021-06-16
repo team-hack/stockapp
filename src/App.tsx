@@ -5,10 +5,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Page } from "./components/Page";
 // Navbar
 import { Header } from "./components/Header";
-// Home Page
-import HomePage from "./home";
 // Login
 import { Login } from "./components/Login"
+// Home page
+import HomePage from "./home";
+
 const App = (): JSX.Element => {
   return (
     <div className="App">

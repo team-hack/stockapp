@@ -1,15 +1,15 @@
 import React from 'react';
 import reportWebVitals from '../reportWebVitals';
+import { Stock } from '../components/Stock';
 
 const HomePage = (): JSX.Element => {
     return (
+        <>
           <div>
-              <p>
-                  What is Stock App?
-              </p>
-              <h2>Tracker</h2>
-              [ Import Tracker ]
+              <h1>Home Page</h1>
           </div>
+          <Stock />
+        </>
       );
       
       // If you want to start measuring performance in your app, pass a function
