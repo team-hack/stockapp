@@ -16,21 +16,17 @@ const Signup = () => {
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
-    if (name == "email") {
-      setForm( current => {
-        return { ...current, email: value };
-      });
-    } else {
-      setForm( current => {
-        return { ...current, password: value };
-      });
-    }
+    setForm( prevState => ({
+      ...prevState,
+      [name]: value
+    }));
   };
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     // prevent page reload
     event.preventDefault()
     // request to server create a new user here
+    console.log(form);
   }
 
   return (
