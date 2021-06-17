@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Page } from "./components/Page";
 // Navbar
 import { Header } from "./components/Header";
+
+// Signup
+import Signup from "./components/Signup";
+
 // Login
 import { Login } from "./components/Login"
 const App = (): JSX.Element => {
@@ -21,7 +25,7 @@ const App = (): JSX.Element => {
                 <Login />
               </Route>
               <Route exact path="/signup">
-                <Page title="Signup" content="This is the signup page" />
+                <Signup />
               </Route>
               <Route path="/">
                 <Page title={"Home Page"} content="This is the home page" />
