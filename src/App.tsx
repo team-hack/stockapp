@@ -11,6 +11,9 @@ import Signup from "./components/Signup";
 
 // Login
 import { Login } from "./components/Login"
+// Home page
+import HomePage from "./home";
+
 const App = (): JSX.Element => {
   return (
     <div className="App">
@@ -27,9 +30,7 @@ const App = (): JSX.Element => {
               <Route exact path="/signup">
                 <Signup />
               </Route>
-              <Route path="/">
-                <Page title={"Home Page"} content="This is the home page" />
-              </Route>
+              <Route path="/" component={HomePage} />
             </Switch>
           </div>
         </Router>

@@ -4,6 +4,6 @@ import App from "./App";
 
 test("Stock App in document", () => {
   render(<App />);
-  const heading = screen.getByText(/Stock App/i);
+  const heading = screen.getByText(/Stock App/i, {selector: '.logo'});
   expect(heading).toBeInTheDocument();
 });
