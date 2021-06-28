@@ -1,4 +1,9 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { 
+  createContext, 
+  useState, 
+  useContext, 
+  ReactNode 
+} from 'react';
 
 import User from '../../types/User';
 
@@ -28,7 +33,7 @@ const defaultAuth = {
 
 const AuthContext = createContext<ProvideAuthType>(defaultAuth);
 
-const useAuth = () : ProvideAuthType => useContext( AuthContext );
+const useAuth = () => useContext( AuthContext );
 
 function useProvideAuth() : ProvideAuthType {
   const [ user, setUser ] = useState<AuthType>({
@@ -73,7 +78,7 @@ function useProvideAuth() : ProvideAuthType {
   return { user, logout, login, signup };
 }
 
-const AuthProvider: React.FC = ({ children }) => {
+const AuthProvider = ({ children } : { children: ReactNode }) => {
   const auth = useProvideAuth();
 
   return (
