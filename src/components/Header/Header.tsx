@@ -17,6 +17,9 @@ const Header = (): JSX.Element => {
         </Link>
       </div>
       <div className="right">
+        <Link to="/protected">
+          Protected
+        </Link>
         <Link className="login" to="/login">
           Login
         </Link>

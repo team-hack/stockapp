@@ -4,15 +4,18 @@ import React, {
   useState 
 } from "react";
 
+import { useAuth } from "../../context/AuthProvider";
+import type User from "../../types/User";
 import "./Signup.css";
 
 const Signup = () => {
-  const formState = {
+  const formState: User = {
     email: '',
     password: ''
   };
 
   const [form, setForm] = useState(formState);
+  const auth = useAuth();
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -25,8 +28,7 @@ const Signup = () => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     // prevent page reload
     event.preventDefault()
-    // request to server create a new user here
-    console.log(form);
+    auth.signup( form );
   }
 
   return (
