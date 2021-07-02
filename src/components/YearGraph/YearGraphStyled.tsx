@@ -31,23 +31,23 @@ align-items: flex-end;
 export const LabelOne = styled.label`
 background-color: beige;
 margin-right: 10px;
-font-size:40px;
+font-size:2vw;
 font-weight: 700;
 `
 // First Container- Label 2:
 export const LabelTwo = styled.label`
 background-color: beige;
 margin-right: 10px;
+font-size:1vw;
 `
 // First Container- Label 3:
 export const LabelThree = styled.label`
 background-color: beige;
-font-size: 30px;
+font-size:2vw;
 font-weight: 700;
 color: green;
 margin-right: 10px;
 `// -End- First Container-->
-
 
 // Second Container 
 export const SecondContainer = styled.div`
@@ -61,7 +61,7 @@ export const LabelFour = styled.label`
 background-color: beige;
 margin-right: 10px;
 color: grey;
-font-size: 25px;
+font-size:1.5vw;
 font-weight: 700;
 align-items: center;
 `
@@ -70,12 +70,13 @@ export const LabelFive = styled.label`
 background-color: beige;
 margin-right: 10px;
 align-items:center;
+font-size:1vw;
 `
 // Second Container- Label 6:
 export const LabelSix = styled.label`
 background-color: beige;
 margin-right: 10px;
-font-size: 25px;
+font-size:1.5vw;
 font-weight: 700;
 color: green;
 align-items:center;
@@ -84,66 +85,57 @@ align-items:center;
 export const LabelSeven = styled.label`
 background-color: beige;
 color: grey;
-font-size: 20px;
+font-size:1vw;
 font-weight: 700;
 align-items:center;
 `// -End- Second Container-->  
  
-
 // Third Container 
 export const ThirdContainer = styled.div`
-padding-left: 10px;
 background-color: white;
 display: flex;
 flex-direction: row;
+justify-content:space-between;
 padding-top: 10px;
 padding-bottom: 10px;
-align-self: flex-start;
 `
 // Third Container- Button 1:
 export const ButtonOne = styled.button`
-margin-right: 20px;
 width: 150px;
 height: 40px;
-border-radius: 40px;
+border-radius: 10px;
 color: blue;
 `
 // Third Container- Button 2:
 export const ButtonTwo = styled.button`
-margin-right: 20px;
 width: 150px;
-border-radius: 40px;
+border-radius: 10px;
 color: blue;
 `
 // Third Container- Button 3:
 export const ButtonThree = styled.button`
-margin-right: 20px;
 width: 150px;
-border-radius: 40px;
+border-radius: 10px;
 color: blue;
 `
 // Third Container- Button 4:
 export const ButtonFour = styled.button`
-margin-right: 20px;
 width: 150px;
-border-radius: 40px;
+border-radius: 10px;
 color: blue;
 `
 // Third Container- Button 5:
 export const ButtonFive = styled.button`
-margin-right: 20px;
 width: 150px;
-border-radius: 40px;
+border-radius: 10px;
 color: blue;
 `
 // Third Container- Button 6:
 export const ButtonSix = styled.button`
-margin-right: 20px;
 width: 150px;
-border-radius: 40px;
+border-radius: 10px;
 color: blue;
 `// -End- Third Container-->  
-
 
 // Fourth Container 
 export const FourthContainer = styled.div`
@@ -174,7 +166,6 @@ font-weight: bold;
 color:white;
 padding-left: 10px;
 `// -End- Fourth Container-->  
-
 
 // Fifth Container 
 export const FifthContainer = styled.div`
@@ -228,8 +219,6 @@ font-weight: bold;
 color:white;
 padding-left: 10px;
 `
-
-
 // Sixth Container 
 export const SixthContainer = styled.div`
 padding-left: 10px;
