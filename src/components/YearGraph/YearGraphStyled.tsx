@@ -53,8 +53,8 @@ margin-right: 10px;
 export const SecondContainer = styled.div`
 padding-left: 10px;
 background-color: white;
-display: flex;
-flex-direction: row;
+display: flex;   
+align-items: flex-end;
 `
 // Second Container- Label 4:
 export const LabelFour = styled.label`
@@ -63,7 +63,7 @@ margin-right: 10px;
 color: grey;
 font-size: 25px;
 font-weight: 700;
-align-items:center;
+align-items: center;
 `
 // Second Container- Label 5:
 export const LabelFive = styled.label`
@@ -173,4 +173,104 @@ font-size: 20px;
 font-weight: bold;
 color:white;
 padding-left: 10px;
+`// -End- Fourth Container-->  
+
+
+// Fifth Container 
+export const FifthContainer = styled.div`
+padding-left: 10px;
+padding-right: 10px;
+background-color: white;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding-top: 10px;
+padding-bottom: 10px;
+align-items: center;
+border-style: solid;
+border-color: #00fffb;
+`
+// Fifth Container- BlockOne
+export const BlockOne = styled.div`
+justify-self: stretch;
+height: 200px;
+background-color: red;
+`
+// Fourth Container- BlockOneMessage
+export const BlockOneMessage = styled.p`
+font-size: 20px;
+font-weight: bold;
+color:white;
+padding-left: 10px;
+`
+// Fifth Container- BlockTwo
+export const BlockTwo = styled.div`
+justify-self: stretch;
+height: 200px;
+background-color:green;
+`
+// Fourth Container- BlockTwoMessage
+export const BlockTwoMessage = styled.p`
+font-size: 20px;
+font-weight: bold;
+color:white;
+padding-left: 10px;
+`
+// Fifth Container- BlockThree
+export const BlockThree = styled.div`
+justify-self: stretch;
+height: 200px;
+background-color: blue;
+`
+// Fourth Container- BlockThreeMessage
+export const BlockThreeMessage = styled.p`
+font-size: 20px;
+font-weight: bold;
+color:white;
+padding-left: 10px;
+`
+
+
+// Sixth Container 
+export const SixthContainer = styled.div`
+padding-left: 10px;
+padding-right: 10px;
+background-color: white;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+// Defining: grid template- for objects
+grid-template-areas: 
+    "label-Title label-Title button"
+    "label-Subtext label-Subtext button";
+// -End- grid template-->  
+padding-top: 10px;
+padding-bottom: 10px;
+align-items: center;
+border-style: solid;
+border-color: #1900ff;
+`
+// Sixth Container- TitleText
+export const TitleText = styled.label`
+grid-area: label-Title;
+font-size: 20px;
+font-weight: bold;
+color:black;
+padding-left: 10px;
+`
+// Sixth Container- SubText 
+export const Subtext = styled.label`
+grid-area: label-Subtext;
+font-size: 15px;
+color:black;
+padding-left: 10px;
+`
+// Sixth Container- Button 7:
+export const ButtonSeven = styled.button`
+grid-area:button;
+justify-self: end;
+margin-right: 20px;
+width: 150px;
+height: 40px;
+border-radius: 10px;
+color: blue;
 `

@@ -24,6 +24,19 @@ import { ButtonSix } from "./YearGraphStyled";
 import { FourthContainer } from "./YearGraphStyled";
 import { StockChartPlaceholder } from "./YearGraphStyled";
 import { PlaceholderMessage } from "./YearGraphStyled";
+// FifthContainer Imported
+import { FifthContainer } from "./YearGraphStyled";
+import { BlockOne } from "./YearGraphStyled";
+import { BlockOneMessage } from "./YearGraphStyled";
+import { BlockTwo } from "./YearGraphStyled";
+import { BlockTwoMessage } from "./YearGraphStyled";
+import { BlockThree } from "./YearGraphStyled";
+import { BlockThreeMessage } from "./YearGraphStyled";
+// SixthContainer Imported
+import { SixthContainer } from "./YearGraphStyled";
+import { TitleText } from "./YearGraphStyled";
+import { Subtext } from "./YearGraphStyled";
+import { ButtonSeven } from "./YearGraphStyled";
 // Creating a YearGraph JSX Element 
 const YearGraph = ( ): JSX.Element => {
   return (
@@ -52,6 +65,22 @@ const YearGraph = ( ): JSX.Element => {
             <PlaceholderMessage>I am a really cool 3d stock chart and this is my temporary placeholder I update in realtime and show you the Money!</PlaceholderMessage>
           </StockChartPlaceholder>
         </FourthContainer>
+        <FifthContainer>
+          <BlockOne>
+            <BlockOneMessage>Open</BlockOneMessage>
+          </BlockOne>
+          <BlockTwo>
+            <BlockTwoMessage>P/E</BlockTwoMessage>
+          </BlockTwo>
+          <BlockThree>
+            <BlockThreeMessage>Vol</BlockThreeMessage>
+          </BlockThree>
+        </FifthContainer>
+        <SixthContainer>
+            <TitleText>Break Time</TitleText>
+            <Subtext>This is awesome I think you got some what a grasp on this joey!</Subtext>
+            <ButtonSeven>Follow</ButtonSeven>
+        </SixthContainer>
       </Wrapper>
   );
 };
