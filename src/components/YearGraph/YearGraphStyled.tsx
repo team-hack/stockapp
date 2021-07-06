@@ -31,22 +31,32 @@ align-items: flex-end;
 export const LabelOne = styled.label`
 background-color: beige;
 margin-right: 10px;
-font-size:2vw;
+font-size:24px;
 font-weight: 700;
+@media only screen and (max-width: 1041px) {
+    font-size:18px;
+     }
 `
 // First Container- Label 2:
 export const LabelTwo = styled.label`
 background-color: beige;
 margin-right: 10px;
-font-size:1vw;
+font-size:24px;
+@media only screen and (max-width: 1041px) {
+    font-size:18px;
+     }
 `
 // First Container- Label 3:
 export const LabelThree = styled.label`
 background-color: beige;
-font-size:2vw;
+font-size:24px;
 font-weight: 700;
 color: green;
 margin-right: 10px;
+@media only screen and (max-width: 1041px) {
+    font-size:18px;
+  
+     }
 `// -End- First Container-->
 
 // Second Container 
@@ -61,33 +71,46 @@ export const LabelFour = styled.label`
 background-color: beige;
 margin-right: 10px;
 color: grey;
-font-size:1.5vw;
+font-size:24px;
 font-weight: 700;
 align-items: center;
+@media only screen and (max-width: 1041px) {
+    display: none !important;
+     }
 `
 // Second Container- Label 5:
 export const LabelFive = styled.label`
 background-color: beige;
 margin-right: 10px;
 align-items:center;
-font-size:1vw;
+font-size:24px;
+@media only screen and (max-width: 1041px) {
+    display: none !important;
+     }
 `
 // Second Container- Label 6:
 export const LabelSix = styled.label`
 background-color: beige;
 margin-right: 10px;
-font-size:1.5vw;
+font-size:24px;
 font-weight: 700;
 color: green;
 align-items:center;
+@media only screen and (max-width: 1041px) {
+    
+    display: none !important;
+     }
 `
 // Second Container- Label 7:
 export const LabelSeven = styled.label`
 background-color: beige;
 color: grey;
-font-size:1vw;
+font-size:24px;
 font-weight: 700;
 align-items:center;
+@media only screen and (max-width: 1041px) {
+    font-size:18px;
+     }
 `// -End- Second Container-->  
  
 // Third Container 
@@ -95,46 +118,70 @@ export const ThirdContainer = styled.div`
 background-color: white;
 display: flex;
 flex-direction: row;
-justify-content:space-between;
+
 padding-top: 10px;
+padding-left: 10px;
 padding-bottom: 10px;
 `
 // Third Container- Button 1:
 export const ButtonOne = styled.button`
 width: 150px;
 height: 40px;
+margin-right: 20px;
 border-radius: 10px;
 color: blue;
+@media only screen and (max-width: 1041px) {
+    display: none !important;
+     }
 `
 // Third Container- Button 2:
 export const ButtonTwo = styled.button`
+margin-right: 20px;
 width: 150px;
 border-radius: 10px;
 color: blue;
+@media only screen and (max-width: 1041px) {
+    display: none !important;
+     }
 `
 // Third Container- Button 3:
 export const ButtonThree = styled.button`
+margin-right: 20px;
 width: 150px;
 border-radius: 10px;
 color: blue;
+@media only screen and (max-width: 1041px) {
+    display: none !important;
+     }
 `
 // Third Container- Button 4:
 export const ButtonFour = styled.button`
+margin-right: 20px;
 width: 150px;
 border-radius: 10px;
 color: blue;
+@media only screen and (max-width: 1041px) {
+    display: none !important;
+     }
 `
 // Third Container- Button 5:
 export const ButtonFive = styled.button`
+margin-right: 20px;
 width: 150px;
 border-radius: 10px;
 color: blue;
+@media only screen and (max-width: 1041px) {
+    display: none !important;
+     }
 `
 // Third Container- Button 6:
 export const ButtonSix = styled.button`
 width: 150px;
 border-radius: 10px;
 color: blue;
+@media only screen and (max-width: 1041px) {
+    display: none !important;
+     }
 `// -End- Third Container-->  
 
 // Fourth Container 
@@ -179,12 +226,22 @@ padding-bottom: 10px;
 align-items: center;
 border-style: solid;
 border-color: #00fffb;
+@media only screen and (max-width: 1041px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-self: stretch;
+     }
 `
 // Fifth Container- BlockOne
 export const BlockOne = styled.div`
 justify-self: stretch;
 height: 200px;
 background-color: red;
+@media only screen and (max-width: 1041px) {
+
+
+     }
 `
 // Fourth Container- BlockOneMessage
 export const BlockOneMessage = styled.p`
@@ -198,6 +255,9 @@ export const BlockTwo = styled.div`
 justify-self: stretch;
 height: 200px;
 background-color:green;
+@media only screen and (max-width: 1041px) {
+    
+     }
 `
 // Fourth Container- BlockTwoMessage
 export const BlockTwoMessage = styled.p`
@@ -211,6 +271,10 @@ export const BlockThree = styled.div`
 justify-self: stretch;
 height: 200px;
 background-color: blue;
+@media only screen and (max-width: 1041px) {
+     
+       
+     }
 `
 // Fourth Container- BlockThreeMessage
 export const BlockThreeMessage = styled.p`
