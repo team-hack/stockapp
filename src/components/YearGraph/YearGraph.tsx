@@ -1,4 +1,7 @@
 // Written by Joey Essak-
+// Imported Font Awesome Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 // Imported Wrapper
 import { Wrapper } from "./YearGraphStyled";
 // FirstContainer Imported
@@ -43,12 +46,12 @@ const YearGraph = ( ): JSX.Element => {
       <Wrapper>
         <MainContainer>
           <LabelOne>19.00</LabelOne>
-          <LabelTwo>  /\  </LabelTwo>
+          <LabelTwo>  <FontAwesomeIcon icon={faCaretUp} />  </LabelTwo>
           <LabelThree>0.10(0.53%)</LabelThree>
         </MainContainer>
         <SecondContainer>
         <LabelFour>19.33</LabelFour>
-          <LabelFive>  /\  </LabelFive>
+          <LabelFive> <FontAwesomeIcon icon={faCaretUp} /> </LabelFive>
           <LabelSix>0.33(1.74%)</LabelSix>
           <LabelSeven>After Hours . June 29, 7:59PM EDT . Market Closed </LabelSeven>
         </SecondContainer>

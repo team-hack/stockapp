@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 // Wrapper that goes around the First and Second Container
 export const Wrapper = styled.div`
-background-color: rgb(240, 239, 239);
+background-color: rgb(255, 255, 255);
 padding-left:50px;
 padding-right: 50px;
 padding-bottom: 40px;
@@ -14,8 +14,9 @@ margin-left: 60px;
 margin-right: 60px;
 padding-top: 40px;
 border-radius: 10px;
-border-color: rgb(255, 0, 0);
-border-style: solid;
+border-color: grey;
+border-style: double;
+filter: drop-shadow(0 0 0.75rem grey);
 `
 
 // First Container aka Main Container
@@ -29,7 +30,7 @@ align-items: flex-end;
 `
 // First Container- Label 1:
 export const LabelOne = styled.label`
-background-color: beige;
+
 margin-right: 10px;
 font-size:24px;
 font-weight: 700;
@@ -39,16 +40,16 @@ font-weight: 700;
 `
 // First Container- Label 2:
 export const LabelTwo = styled.label`
-background-color: beige;
+
 margin-right: 10px;
-font-size:24px;
+font-size:30px;
 @media only screen and (max-width: 1041px) {
     font-size:18px;
      }
 `
 // First Container- Label 3:
 export const LabelThree = styled.label`
-background-color: beige;
+
 font-size:24px;
 font-weight: 700;
 color: green;
@@ -68,7 +69,7 @@ align-items: flex-end;
 `
 // Second Container- Label 4:
 export const LabelFour = styled.label`
-background-color: beige;
+
 margin-right: 10px;
 color: grey;
 font-size:24px;
@@ -80,17 +81,17 @@ align-items: center;
 `
 // Second Container- Label 5:
 export const LabelFive = styled.label`
-background-color: beige;
+
 margin-right: 10px;
-align-items:center;
-font-size:24px;
+align-self: flex-end;
+font-size:30px;
 @media only screen and (max-width: 1041px) {
     display: none !important;
      }
 `
 // Second Container- Label 6:
 export const LabelSix = styled.label`
-background-color: beige;
+
 margin-right: 10px;
 font-size:24px;
 font-weight: 700;
@@ -103,7 +104,7 @@ align-items:center;
 `
 // Second Container- Label 7:
 export const LabelSeven = styled.label`
-background-color: beige;
+
 color: grey;
 font-size:24px;
 font-weight: 700;
@@ -191,17 +192,16 @@ padding-right: 10px;
 background-color: white;
 display: flex;
 flex-direction: row;
-padding-top: 10px;
+
 padding-bottom: 10px;
 align-items: center;
-border-style: solid;
-border-color: orange;
+;
 `
 // Fourth Container- StockChartPlaceholder
 export const StockChartPlaceholder = styled.div`
 height: 400px;
 width: 100vw;
-background-color: green;
+background-color: #969696;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -212,6 +212,7 @@ font-size: 20px;
 font-weight: bold;
 color:white;
 padding-left: 10px;
+
 `// -End- Fourth Container-->  
 
 // Fifth Container 
@@ -220,12 +221,12 @@ padding-left: 10px;
 padding-right: 10px;
 background-color: white;
 display: grid;
+grid-gap: 10px;
 grid-template-columns: 1fr 1fr 1fr;
-padding-top: 10px;
+
 padding-bottom: 10px;
 align-items: center;
-border-style: solid;
-border-color: #00fffb;
+
 @media only screen and (max-width: 1041px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -237,7 +238,7 @@ border-color: #00fffb;
 export const BlockOne = styled.div`
 justify-self: stretch;
 height: 200px;
-background-color: red;
+background-color:#c7c4c4;
 @media only screen and (max-width: 1041px) {
 
 
@@ -254,7 +255,7 @@ padding-left: 10px;
 export const BlockTwo = styled.div`
 justify-self: stretch;
 height: 200px;
-background-color:green;
+background-color:#969696;
 @media only screen and (max-width: 1041px) {
     
      }
@@ -270,7 +271,7 @@ padding-left: 10px;
 export const BlockThree = styled.div`
 justify-self: stretch;
 height: 200px;
-background-color: blue;
+background-color: #c7c4c4;
 @media only screen and (max-width: 1041px) {
      
        
@@ -299,8 +300,8 @@ grid-template-areas:
 padding-top: 10px;
 padding-bottom: 10px;
 align-items: center;
-border-style: solid;
-border-color: #1900ff;
+/* border-style: solid;
+border-color: #1900ff; */
 `
 // Sixth Container- TitleText
 export const TitleText = styled.label`
