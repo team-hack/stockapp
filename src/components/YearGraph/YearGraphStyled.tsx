@@ -32,7 +32,7 @@ align-items: flex-end;
 export const LabelOne = styled.label`
 
 margin-right: 10px;
-font-size:24px;
+font-size:54px;
 font-weight: 700;
 @media only screen and (max-width: 1041px) {
     font-size:18px;
@@ -42,6 +42,7 @@ font-weight: 700;
 export const LabelTwo = styled.label`
 
 margin-right: 10px;
+color: green;
 font-size:30px;
 @media only screen and (max-width: 1041px) {
     font-size:18px;
@@ -85,6 +86,7 @@ export const LabelFive = styled.label`
 margin-right: 10px;
 align-self: flex-end;
 font-size:30px;
+color: green;
 @media only screen and (max-width: 1041px) {
     display: none !important;
      }
@@ -94,7 +96,7 @@ export const LabelSix = styled.label`
 
 margin-right: 10px;
 font-size:24px;
-font-weight: 700;
+font-weight: 600;
 color: green;
 align-items:center;
 @media only screen and (max-width: 1041px) {
@@ -119,7 +121,7 @@ export const ThirdContainer = styled.div`
 background-color: white;
 display: flex;
 flex-direction: row;
-
+margin-top: 10px;
 padding-top: 10px;
 padding-left: 10px;
 padding-bottom: 10px;
@@ -127,20 +129,33 @@ padding-bottom: 10px;
 // Third Container- Button 1:
 export const ButtonOne = styled.button`
 width: 150px;
-height: 40px;
+height: 50px;
 margin-right: 20px;
-border-radius: 10px;
-color: blue;
+border-radius: 30px;
+color: #666565;
+font-size: 18px;
+font-weight: bold;
+&:hover {
+        background-color: #6d6d6d;
+        color: white;
+    }
 @media only screen and (max-width: 1041px) {
     display: none !important;
      }
 `
 // Third Container- Button 2:
 export const ButtonTwo = styled.button`
+ 
 margin-right: 20px;
 width: 150px;
-border-radius: 10px;
-color: blue;
+border-radius: 30px;
+color: #666565;
+font-size: 18px;
+font-weight: bold;
+&:hover {
+        background-color: #6d6d6d;
+        color: white;
+    }
 @media only screen and (max-width: 1041px) {
     display: none !important;
      }
@@ -149,8 +164,14 @@ color: blue;
 export const ButtonThree = styled.button`
 margin-right: 20px;
 width: 150px;
-border-radius: 10px;
-color: blue;
+border-radius: 30px;
+color: #666565;
+font-size: 18px;
+font-weight: bold;
+&:hover {
+        background-color: #6d6d6d;
+        color: white;
+    }
 @media only screen and (max-width: 1041px) {
     display: none !important;
      }
@@ -159,8 +180,14 @@ color: blue;
 export const ButtonFour = styled.button`
 margin-right: 20px;
 width: 150px;
-border-radius: 10px;
-color: blue;
+border-radius: 30px;
+color: #666565;
+font-size: 18px;
+font-weight: bold;
+&:hover {
+        background-color: #6d6d6d;
+        color: white;
+    }
 @media only screen and (max-width: 1041px) {
     display: none !important;
      }
@@ -169,8 +196,14 @@ color: blue;
 export const ButtonFive = styled.button`
 margin-right: 20px;
 width: 150px;
-border-radius: 10px;
-color: blue;
+border-radius: 30px;
+color: #666565;
+font-size: 18px;
+font-weight: bold;
+&:hover {
+        background-color: #6d6d6d;
+        color: white;
+    }
 @media only screen and (max-width: 1041px) {
     display: none !important;
      }
@@ -178,8 +211,14 @@ color: blue;
 // Third Container- Button 6:
 export const ButtonSix = styled.button`
 width: 150px;
-border-radius: 10px;
-color: blue;
+border-radius: 30px;
+color: #666565;
+font-size: 18px;
+font-weight: bold;
+&:hover {
+        background-color: #6d6d6d;
+        color: white;
+    }
 @media only screen and (max-width: 1041px) {
     display: none !important;
      }
@@ -306,7 +345,7 @@ border-color: #1900ff; */
 // Sixth Container- TitleText
 export const TitleText = styled.label`
 grid-area: label-Title;
-font-size: 20px;
+font-size: 25px;
 font-weight: bold;
 color:black;
 padding-left: 10px;
@@ -314,17 +353,35 @@ padding-left: 10px;
 // Sixth Container- SubText 
 export const Subtext = styled.label`
 grid-area: label-Subtext;
-font-size: 15px;
+font-size: 20px;
 color:black;
 padding-left: 10px;
 `
+// Sixth Container- StyledLink
+export const StyledLink = styled.a`
+text-decoration: none;
+font-weight: bold;
+`
+// Sixth Container- StyledLinkTwo
+export const StyledLinkTwo = styled.a`
+text-decoration: none;
+color: #0aa9e2;
+font-weight: bold;
+`
+
 // Sixth Container- Button 7:
 export const ButtonSeven = styled.button`
 grid-area:button;
 justify-self: end;
+justify-content: space-between;
+font-size: 18px;
+font-weight: bold;
 margin-right: 20px;
 width: 150px;
-height: 40px;
-border-radius: 10px;
-color: blue;
+height: 50px;
+color: grey;
+&:hover {
+        background-color: #6d6d6d;
+        color: white;
+    }
 `

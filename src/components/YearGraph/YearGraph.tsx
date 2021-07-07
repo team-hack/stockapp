@@ -2,6 +2,7 @@
 // Imported Font Awesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-regular-svg-icons'
 // Imported Wrapper
 import { Wrapper } from "./YearGraphStyled";
 // FirstContainer Imported
@@ -40,6 +41,9 @@ import { SixthContainer } from "./YearGraphStyled";
 import { TitleText } from "./YearGraphStyled";
 import { Subtext } from "./YearGraphStyled";
 import { ButtonSeven } from "./YearGraphStyled";
+import { StyledLink } from './YearGraphStyled';
+import { StyledLinkTwo } from './YearGraphStyled';
+
 // Creating a YearGraph JSX Element 
 const YearGraph = ( ): JSX.Element => {
   return (
@@ -65,7 +69,9 @@ const YearGraph = ( ): JSX.Element => {
         </ThirdContainer>
         <FourthContainer>
           <StockChartPlaceholder>
-            <PlaceholderMessage>I am a really cool 3d stock chart and this is my temporary placeholder I update in realtime and show you the Money!</PlaceholderMessage>
+            <PlaceholderMessage>
+              I am a really cool 3d stock chart and this is my temporary placeholder I update in realtime and show you the Money!
+            </PlaceholderMessage>
           </StockChartPlaceholder>
         </FourthContainer>
         <FifthContainer>
@@ -80,9 +86,9 @@ const YearGraph = ( ): JSX.Element => {
           </BlockThree>
         </FifthContainer>
         <SixthContainer>
-            <TitleText>Break Time</TitleText>
-            <Subtext>This is awesome I think you got some what a grasp on this joey!</Subtext>
-            <ButtonSeven>Follow</ButtonSeven>
+            <TitleText>Track this stock</TitleText>
+            <Subtext>Get the latest quotes in your <StyledLink href="">watchlist</StyledLink> and receive email and browser notifications</Subtext>
+            <ButtonSeven><StyledLinkTwo><FontAwesomeIcon icon={faStar} /></StyledLinkTwo> Follow</ButtonSeven>
         </SixthContainer>
       </Wrapper>
   );
