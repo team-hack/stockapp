@@ -1,7 +1,6 @@
 // Written by Joey Essak-
 // Importorting styled-comonents 
 import styled from "styled-components";
-
 // Wrapper that goes around the First and Second Container
 export const Wrapper = styled.div`
 background-color: rgb(255, 255, 255);
@@ -9,16 +8,18 @@ padding-left:50px;
 padding-right: 50px;
 padding-bottom: 40px;
 margin-top: 50px;
+margin-bottom: 50px;
 //height: 100vh;
 margin-left: 60px;
 margin-right: 60px;
 padding-top: 40px;
-border-radius: 20px;
+border-radius: 50px;
 border-color: #004d40;
 border-style: solid;
 border-width: 10px;
 filter: drop-shadow(0 0 0.75rem grey);
 `
+
 
 // First Container aka Main Container
 export const MainContainer = styled.div`
@@ -36,8 +37,8 @@ margin-right: 10px;
 font-size:54px;
 font-weight: 700;
 @media only screen and (max-width: 1041px) {
-    font-size:18px;
-     }
+font-size:18px;
+}
 `
 // First Container- Label 2:
 export const LabelTwo = styled.label`
@@ -46,8 +47,8 @@ margin-right: 10px;
 color: green;
 font-size:30px;
 @media only screen and (max-width: 1041px) {
-    font-size:18px;
-     }
+font-size:18px;
+}
 `
 // First Container- Label 3:
 export const LabelThree = styled.label`
@@ -57,10 +58,11 @@ font-weight: 700;
 color: green;
 margin-right: 10px;
 @media only screen and (max-width: 1041px) {
-    font-size:18px;
-  
-     }
+font-size:18px;
+}
 `// -End- First Container-->
+
+
 
 // Second Container 
 export const SecondContainer = styled.div`
@@ -71,52 +73,49 @@ align-items: flex-end;
 `
 // Second Container- Label 4:
 export const LabelFour = styled.label`
-
 margin-right: 10px;
 color: grey;
 font-size:24px;
 font-weight: 700;
 align-items: center;
 @media only screen and (max-width: 1041px) {
-    display: none !important;
-     }
+display: none !important;
+}
 `
 // Second Container- Label 5:
 export const LabelFive = styled.label`
-
 margin-right: 10px;
 align-self: flex-end;
 font-size:30px;
 color: green;
 @media only screen and (max-width: 1041px) {
-    display: none !important;
-     }
+display: none !important;
+}
 `
 // Second Container- Label 6:
 export const LabelSix = styled.label`
-
 margin-right: 10px;
 font-size:24px;
 font-weight: 600;
 color: green;
 align-items:center;
 @media only screen and (max-width: 1041px) {
-    
-    display: none !important;
-     }
+display: none !important;
+}
 `
 // Second Container- Label 7:
 export const LabelSeven = styled.label`
-
 color: grey;
 font-size:24px;
 font-weight: 700;
 align-items:center;
 @media only screen and (max-width: 1041px) {
-    font-size:18px;
-     }
+font-size:18px;
+}
 `// -End- Second Container-->  
  
+
+
 // Third Container 
 export const ThirdContainer = styled.div`
 background-color: white;
@@ -137,16 +136,15 @@ color: #666565;
 font-size: 18px;
 font-weight: bold;
 &:hover {
-        background-color: #6d6d6d;
-        color: white;
-    }
-@media only screen and (max-width: 1041px) {
+    background-color: #6d6d6d;
+    color: white;
+}
+@media only screen and (max-width: 1041px){
     display: none !important;
-     }
+}
 `
 // Third Container- Button 2:
 export const ButtonTwo = styled.button`
- 
 margin-right: 20px;
 width: 150px;
 border-radius: 30px;
@@ -154,12 +152,12 @@ color: #666565;
 font-size: 18px;
 font-weight: bold;
 &:hover {
-        background-color: #6d6d6d;
-        color: white;
-    }
-@media only screen and (max-width: 1041px) {
+    background-color: #6d6d6d;
+    color: white;
+}
+@media only screen and (max-width: 1041px){
     display: none !important;
-     }
+}
 `
 // Third Container- Button 3:
 export const ButtonThree = styled.button`
@@ -170,12 +168,12 @@ color: #666565;
 font-size: 18px;
 font-weight: bold;
 &:hover {
-        background-color: #6d6d6d;
-        color: white;
-    }
+    background-color: #6d6d6d;
+    color: white;
+}
 @media only screen and (max-width: 1041px) {
     display: none !important;
-     }
+}
 `
 // Third Container- Button 4:
 export const ButtonFour = styled.button`
@@ -186,12 +184,12 @@ color: #666565;
 font-size: 18px;
 font-weight: bold;
 &:hover {
-        background-color: #6d6d6d;
-        color: white;
-    }
+    background-color: #6d6d6d;
+    color: white;
+}
 @media only screen and (max-width: 1041px) {
     display: none !important;
-     }
+}
 `
 // Third Container- Button 5:
 export const ButtonFive = styled.button`
@@ -202,12 +200,12 @@ color: #666565;
 font-size: 18px;
 font-weight: bold;
 &:hover {
-        background-color: #6d6d6d;
-        color: white;
-    }
+    background-color: #6d6d6d;
+    color: white;
+}
 @media only screen and (max-width: 1041px) {
     display: none !important;
-     }
+}
 `
 // Third Container- Button 6:
 export const ButtonSix = styled.button`
@@ -217,13 +215,15 @@ color: #666565;
 font-size: 18px;
 font-weight: bold;
 &:hover {
-        background-color: #6d6d6d;
-        color: white;
-    }
+    background-color: #6d6d6d;
+    color: white;
+}
 @media only screen and (max-width: 1041px) {
     display: none !important;
-     }
+}
 `// -End- Third Container-->  
+
+
 
 // Fourth Container 
 export const FourthContainer = styled.div`
@@ -239,9 +239,8 @@ align-items: center;
 export const StockChartPlaceholder = styled.div`
 height: 400px;
 width: 100vw;
-
 background: linear-gradient(to bottom, white, #004d40  );
-        color: white;
+color: white;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -253,16 +252,6 @@ font-weight: bold;
 color:white;
 padding-left: 10px;
 `// -End- Fourth Container-->  
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -291,7 +280,7 @@ height: auto;
 display: flex;
 flex-direction:column;
 background: linear-gradient(to bottom, white, #eceff1);
-        color: white;
+color: white;
 @media only screen and (max-width: 1041px) {
 
 }
@@ -309,18 +298,6 @@ border-bottom-width: 2px;
 border-bottom-style: solid;
 border-bottom-color: #c7c4c4;
 `
-// Fifth Container- BlockOneLabelOne
-export const BlockOneLabelOne = styled.label`
-font-size: 25px;
-color:black;
-`
-// Fifth Container- BlockOneLabelTwo
-export const BlockOneLabelTwo = styled.label`
-font-size: 25px;
-color:black;
-`// -End- Fifth Container- BlockOneContainerOne-->
-
-
 // Fifth Container- BlockOneContainerTwo
 export const BlockOneContainerTwo = styled.div`
 display: flex;
@@ -335,6 +312,28 @@ border-bottom-width: 2px;
 border-bottom-style: solid;
 border-bottom-color: #c7c4c4;
 `
+// Fifth Container- BlockOneContainerThree
+export const BlockOneContainerThree = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+margin-top: 10px;
+margin-bottom:10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+`
+// Fifth Container- BlockOneLabelOne
+export const BlockOneLabelOne = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockOneLabelTwo
+export const BlockOneLabelTwo = styled.label`
+font-size: 25px;
+color:black;
+`
 // Fifth Container- BlockOneLabelThree
 export const BlockOneLabelThree = styled.label`
 font-size: 25px;
@@ -344,20 +343,6 @@ color:black;
 export const BlockOneLabelFour = styled.label`
 font-size: 25px;
 color:black;
-`// -End- Fifth Container- BlockOneContainerTwo-->
-
-
-// Fifth Container- BlockOneContainerThree
-export const BlockOneContainerThree = styled.div`
- display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom:10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 10px;
 `
 // Fifth Container- BlockOneLabelFive
 export const BlockOneLabelFive = styled.label`
@@ -375,20 +360,14 @@ font-size: 20px;
 font-weight: bold;
 color:white;
 padding-left: 10px;
-`// -End- Fifth Container- BlockOneContainerThree-->
-
-
-
-
-
-
+` 
 // Fifth Container- BlockTwo
 export const BlockTwo = styled.div`
 display: flex;
 flex-direction:column;
 height: auto;
 background: linear-gradient(to bottom, white, #eceff1 );
-        color: white;
+color: white;
 @media only screen and (max-width: 1041px) {
     
 }
@@ -406,7 +385,32 @@ border-bottom-width: 2px;
 border-bottom-style: solid;
 border-bottom-color: #c7c4c4;
 `
-
+// Fifth Container- BlockTwoContainerTwo
+export const BlockTwoContainerTwo = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+margin-top: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #c7c4c4;
+`
+// Fifth Container- BlockTwoContainerThree
+export const BlockTwoContainerThree = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+margin-top: 10px;
+margin-bottom:10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+`
 // Fifth Container- BlockTwoLabelOne
 export const BlockTwoLabelOne = styled.label`
 font-size: 25px;
@@ -416,22 +420,6 @@ color:black;
 export const BlockTwoLabelTwo = styled.label`
 font-size: 25px;
 color:black;
-`
-
-
-// Fifth Container- BlockTwoContainerTwo
-export const BlockTwoContainerTwo = styled.div`
-  display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 10px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #c7c4c4;
 `
 // Fifth Container- BlockTwoLabelThree
 export const BlockTwoLabelThree = styled.label`
@@ -443,19 +431,6 @@ export const BlockTwoLabelFour = styled.label`
 font-size: 25px;
 color:black;
 `
-// Fifth Container- BlockTwoContainerThree
-export const BlockTwoContainerThree = styled.div`
-  display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom:10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 10px;
-  
-`
 // Fifth Container- BlockTwoLabelFive
 export const BlockTwoLabelFive = styled.label`
 font-size: 25px;
@@ -466,15 +441,13 @@ export const BlockTwoLabelSix = styled.label`
 font-size: 25px;
 color:black;
 `
-
-
 // Fifth Container- BlockThree
 export const BlockThree = styled.div`
 display: flex;
 flex-direction:column;
 height: auto;
 background: linear-gradient(to bottom, white, #eceff1 );
-        color: white;
+color: white;
 @media only screen and (max-width: 1041px) {
         
 }
@@ -517,7 +490,6 @@ padding-top: 10px;
 padding-bottom: 10px;
 padding-left: 5px;
 padding-right: 10px;
-
 `
 // Fifth Container- BlockThreeLabelOne
 export const BlockThreeLabelOne = styled.label`
@@ -548,7 +520,7 @@ color:black;
 export const BlockThreeLabelSix = styled.label`
 font-size: 25px;
 color:black;
-`
+`// -End- Fifth Container-->
 
 
 
@@ -612,7 +584,7 @@ width: 150px;
 height: 50px;
 color: grey;
 &:hover {
-        background-color: #6d6d6d;
-        color: white;
-    }
+    background-color: #6d6d6d;
+    color: white;
+}
 `
