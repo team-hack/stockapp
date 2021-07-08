@@ -13,9 +13,10 @@ margin-top: 50px;
 margin-left: 60px;
 margin-right: 60px;
 padding-top: 40px;
-border-radius: 10px;
-border-color: grey;
-border-style: double;
+border-radius: 20px;
+border-color: #004d40;
+border-style: solid;
+border-width: 10px;
 filter: drop-shadow(0 0 0.75rem grey);
 `
 
@@ -231,16 +232,16 @@ padding-right: 10px;
 background-color: white;
 display: flex;
 flex-direction: row;
-
 padding-bottom: 10px;
 align-items: center;
-;
 `
 // Fourth Container- StockChartPlaceholder
 export const StockChartPlaceholder = styled.div`
 height: 400px;
 width: 100vw;
-background-color: #969696;
+
+background: linear-gradient(to bottom, white, #004d40  );
+        color: white;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -251,8 +252,19 @@ font-size: 20px;
 font-weight: bold;
 color:white;
 padding-left: 10px;
-
 `// -End- Fourth Container-->  
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Fifth Container 
 export const FifthContainer = styled.div`
@@ -260,28 +272,102 @@ padding-left: 10px;
 padding-right: 10px;
 background-color: white;
 display: grid;
-grid-gap: 10px;
+grid-gap: 60px;
 grid-template-columns: 1fr 1fr 1fr;
-
-padding-bottom: 10px;
 align-items: center;
-
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #c7c4c4;
 @media only screen and (max-width: 1041px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-    justify-self: stretch;
-     }
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-gap: 10px;
+justify-self: stretch;
+}
 `
 // Fifth Container- BlockOne
 export const BlockOne = styled.div`
-justify-self: stretch;
-height: 200px;
-background-color:#c7c4c4;
+height: auto;
+display: flex;
+flex-direction:column;
+background: linear-gradient(to bottom, white, #eceff1);
+        color: white;
 @media only screen and (max-width: 1041px) {
 
+}
+`
+// Fifth Container- BlockOneContainerOne
+export const BlockOneContainerOne = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #c7c4c4;
+`
+// Fifth Container- BlockOneLabelOne
+export const BlockOneLabelOne = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockOneLabelTwo
+export const BlockOneLabelTwo = styled.label`
+font-size: 25px;
+color:black;
+`// -End- Fifth Container- BlockOneContainerOne-->
 
-     }
+
+// Fifth Container- BlockOneContainerTwo
+export const BlockOneContainerTwo = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+margin-top: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #c7c4c4;
+`
+// Fifth Container- BlockOneLabelThree
+export const BlockOneLabelThree = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockOneLabelFour
+export const BlockOneLabelFour = styled.label`
+font-size: 25px;
+color:black;
+`// -End- Fifth Container- BlockOneContainerTwo-->
+
+
+// Fifth Container- BlockOneContainerThree
+export const BlockOneContainerThree = styled.div`
+ display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+`
+// Fifth Container- BlockOneLabelFive
+export const BlockOneLabelFive = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockOneLabelSix
+export const BlockOneLabelSix = styled.label`
+font-size: 25px;
+color:black;
 `
 // Fourth Container- BlockOneMessage
 export const BlockOneMessage = styled.p`
@@ -289,42 +375,186 @@ font-size: 20px;
 font-weight: bold;
 color:white;
 padding-left: 10px;
-`
+`// -End- Fifth Container- BlockOneContainerThree-->
+
+
+
+
+
+
 // Fifth Container- BlockTwo
 export const BlockTwo = styled.div`
-justify-self: stretch;
-height: 200px;
-background-color:#969696;
+display: flex;
+flex-direction:column;
+height: auto;
+background: linear-gradient(to bottom, white, #eceff1 );
+        color: white;
 @media only screen and (max-width: 1041px) {
     
-     }
+}
 `
-// Fourth Container- BlockTwoMessage
-export const BlockTwoMessage = styled.p`
-font-size: 20px;
-font-weight: bold;
-color:white;
-padding-left: 10px;
+// Fifth Container- BlockTwoContainerOne
+export const BlockTwoContainerOne = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #c7c4c4;
 `
+
+// Fifth Container- BlockTwoLabelOne
+export const BlockTwoLabelOne = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockTwoLabelTwo
+export const BlockTwoLabelTwo = styled.label`
+font-size: 25px;
+color:black;
+`
+
+
+// Fifth Container- BlockTwoContainerTwo
+export const BlockTwoContainerTwo = styled.div`
+  display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #c7c4c4;
+`
+// Fifth Container- BlockTwoLabelThree
+export const BlockTwoLabelThree = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockTwoLabelFour
+export const BlockTwoLabelFour = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockTwoContainerThree
+export const BlockTwoContainerThree = styled.div`
+  display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+  
+`
+// Fifth Container- BlockTwoLabelFive
+export const BlockTwoLabelFive = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockTwoLabelSix
+export const BlockTwoLabelSix = styled.label`
+font-size: 25px;
+color:black;
+`
+
+
 // Fifth Container- BlockThree
 export const BlockThree = styled.div`
-justify-self: stretch;
-height: 200px;
-background-color: #c7c4c4;
+display: flex;
+flex-direction:column;
+height: auto;
+background: linear-gradient(to bottom, white, #eceff1 );
+        color: white;
 @media only screen and (max-width: 1041px) {
-     
-       
-     }
+        
+}
 `
-// Fourth Container- BlockThreeMessage
-export const BlockThreeMessage = styled.p`
-font-size: 20px;
-font-weight: bold;
-color:white;
-padding-left: 10px;
+// Fifth Container- BlockThreeContainerOne
+export const BlockThreeContainerOne = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #c7c4c4;
 `
+// Fifth Container- BlockThreeContainerTwo
+export const BlockThreeContainerTwo = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+margin-top: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-bottom-color: #c7c4c4;
+`
+// Fifth Container- BlockThreeContainerThree
+export const BlockThreeContainerThree = styled.div`
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+margin-top: 10px;
+margin-bottom:10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 10px;
+
+`
+// Fifth Container- BlockThreeLabelOne
+export const BlockThreeLabelOne = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockThreeLabelTwo
+export const BlockThreeLabelTwo = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockThreeLabelThree
+export const BlockThreeLabelThree = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockThreeLabelFour
+export const BlockThreeLabelFour = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockThreeLabelFive
+export const BlockThreeLabelFive = styled.label`
+font-size: 25px;
+color:black;
+`
+// Fifth Container- BlockThreeLabelSix
+export const BlockThreeLabelSix = styled.label`
+font-size: 25px;
+color:black;
+`
+
+
+
 // Sixth Container 
 export const SixthContainer = styled.div`
+margin-top: 10px;
 padding-left: 10px;
 padding-right: 10px;
 background-color: white;
@@ -353,6 +583,7 @@ padding-left: 10px;
 // Sixth Container- SubText 
 export const Subtext = styled.label`
 grid-area: label-Subtext;
+margin-top: 10px;
 font-size: 20px;
 color:black;
 padding-left: 10px;
