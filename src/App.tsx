@@ -6,7 +6,7 @@ import { Page } from "./components/Page";
 // Navbar
 import { Header } from "./components/Header";
 // Login
-import { Login } from "./components/Login"
+import { Login } from "./components/Login";
 const App = (): JSX.Element => {
   return (
     <div className="App">
@@ -14,7 +14,7 @@ const App = (): JSX.Element => {
         <Router>
           <div>
             <Header />
-            
+
             <Switch>
               <Route exact path="/login">
                 <Page title="Login" content="This is the login page" />
