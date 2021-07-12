@@ -38,7 +38,6 @@ const App = (): JSX.Element => {
                   </PrivateRoute>
                 </Route>
                 <Route exact path="/login">
-                  <Page title="Login" content="This is the login page" />
                   <Login />
                 </Route>
                 <Route exact path="/signup">
