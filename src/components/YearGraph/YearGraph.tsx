@@ -13,23 +13,21 @@ const YearGraph = ( ): JSX.Element => {
   return (
    <div className="wrapper">
       <div className="container-1">
-        Container 1
-          <label>19.00</label>
+          <label> 19.00</label>
           <FontAwesomeIcon icon={faCaretUp}/>   
           <label>0.10</label>
           <label>(0.53%)</label>
       </div>
       <div className="container-2">
-        Container 2
+        Buttons go here
       </div>
       <div className="container-3">
-        Container 3
+        Labels go here
       </div>
       <div className="container-4">
-        Container 4
+        3D Chart goes here
       </div>
       <div className="container-5">
-        Container5
           <div className="column-1">
             Column One
           </div>
@@ -41,7 +39,7 @@ const YearGraph = ( ): JSX.Element => {
           </div>
       </div>
       <div className="container-6">
-        Conatiner 6
+        labels and a button go here
       </div>
    </div> 
   );

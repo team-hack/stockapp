@@ -23,6 +23,31 @@
 
 .container-5 {
     background-color: #26a69a;
+    display: flex;
+}
+
+.column-1 {
+    order:1;
+    width: 33.33%;
+    background-color: #a7ffeb;
+    text-align: center;
+    align-self: center;
+}
+
+.column-2 {
+    order:2;
+    width: 33.33%;
+    background-color: #64ffda;
+    text-align: center;
+    align-self: center;
+}
+
+.column-3 {
+    order:3;
+    width: 33.33%;
+    background-color: #1de9b6;
+    text-align: center;
+    align-self: center;
 }
 
 .container-6 {
