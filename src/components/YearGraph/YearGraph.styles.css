@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color:white;
+}
+
+.container-1 {
+    background-color: #e0f2f1;
+}
+
+.container-2 {
+    background-color: #b2dfdb;
+}
+
+.container-3 {
+    background-color: #80cbc4;
+}
+
+.container-4 {
+    background-color: #4db6ac;
+}
+
+.container-5 {
+    background-color: #26a69a;
+}
+
+.container-6 {
+    background-color: #009688;
+}
