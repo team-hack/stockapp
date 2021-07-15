@@ -19,3 +19,16 @@
 .signup {
   margin-right: 40px;
 }
+
+.right > a {
+  color: white;
+  text-decoration: underline;
+}
+
+.right > a:visited{
+  color: white;
+}
+
+.right > a:hover{
+  cursor: pointer;
+}
