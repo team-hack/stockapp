@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { HeaderMain, RoundedButton } from "./HeaderStyled";
 import { useAuth } from "../../context/AuthProvider";
 
@@ -19,9 +19,11 @@ const Header = () => {
   ];
 
   const auth = useAuth();
+  const history = useHistory();
 
   const logoutUser = () => {
     auth.logout();
+    history.push("/");
   }
 
   const generateNavLinks = () => {
@@ -34,7 +36,7 @@ const Header = () => {
         <Link className="login" to="/login">
         Login
         </Link>
-        <Link className="signup" to="/">
+        <Link className="signup" to="/signup">
         Signup
         </Link>
       </>
