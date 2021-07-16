@@ -7,6 +7,8 @@
 
 .container-1 {
     background-color: #e0f2f1;
+    display: flex;
+    flex-direction: row;
 }
 
 .container-2 {
@@ -32,6 +34,8 @@
     background-color: #a7ffeb;
     text-align: center;
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .column-2 {
@@ -40,6 +44,8 @@
     background-color: #64ffda;
     text-align: center;
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .column-3 {
@@ -48,8 +54,22 @@
     background-color: #1de9b6;
     text-align: center;
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-6 {
     background-color: #009688;
+}
+
+#icon {
+    order: 2;
+}
+
+.test {
+    color:red;
+}
+
+.test2{
+    color: blue;
 }
