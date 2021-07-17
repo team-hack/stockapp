@@ -1,18 +1,31 @@
 .wrapper {
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     background-color:white;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #009688;
+    border-width: 10px;
 }
 
 .container-1 {
-    background-color: #e0f2f1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 }
 
 .container-2 {
     background-color: #b2dfdb;
+    display: flex-box;
+    flex-direction: row;
+    align-items: center;
 }
 
 .container-3 {
