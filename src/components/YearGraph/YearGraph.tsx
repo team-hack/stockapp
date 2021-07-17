@@ -12,28 +12,20 @@ import { Label } from "./YearGraphStyled";
 const YearGraph = ( ): JSX.Element => {
   
   const containerOneLabels = [
-    {id:1, value: " 19.00", myLabel:"test"},
-    {id:2, value: <FontAwesomeIcon id="icon" icon={faCaretUp}/> , myLabel:"test2"},
-    {id:3, value: " 0.10", myLabel:"test3" },
-    {id:3, value: " (00.53%)", myLabel:"test4" },
+    {id:1, value: " 19.00", labelName:"currentPriceLabel"},
+    {id:2, value: <FontAwesomeIcon id="icon" icon={faCaretUp}/> , labelName:"faIconLabel"},
+    {id:3, value: " 0.10", labelName:"priceDiffernceLabel" },
+    {id:4, value: " (00.53%)", labelName:"priceDifferncePercentLabel"},
   ];
   
   
   return (
    <div className="wrapper">
       <div className="container-1">;
-      { containerOneLabels.map((containerOneLabels)=> (
-        <Label id={`${containerOneLabels.id}`} myLabel={ containerOneLabels.myLabel } >{containerOneLabels.value}</Label> 
-      ))}  
-
- 
-
-
+          { containerOneLabels.map((containerOneLabels)=>(
+            <Label id={ `${containerOneLabels.id}` } labelName={containerOneLabels.labelName}> {containerOneLabels.value} </Label>))
+          }  
       </div>
-
-
-
-
       <div className="container-2">
         Buttons go here and will be Dynamically Loaded by react
       </div>
