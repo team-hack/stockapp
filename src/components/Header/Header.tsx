@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { HeaderMain, RoundedButton } from "./HeaderStyled";
+import { useAuth } from "../../context/AuthProvider";
 
 import "./header.styles.css";
 
@@ -8,7 +9,7 @@ import "./header.styles.css";
 
 // }
 
-const Header = (): JSX.Element => {
+const Header = () => {
   const data = [
     { id: 1, title: "Day" },
     { id: 2, title: "Week" },
@@ -16,6 +17,32 @@ const Header = (): JSX.Element => {
     { id: 4, title: "Year" },
     { id: 5, title: "Five Year" },
   ];
+
+  const auth = useAuth();
+  const history = useHistory();
+
+  const logoutUser = () => {
+    auth.logout();
+    history.push("/");
+  }
+
+  const generateNavLinks = () => {
+    if (auth.user?.authenticated)  {
+      return (<a onClick={logoutUser}>Sign out</a>)
+    }
+
+    return (
+      <>
+        <Link className="login" to="/login">
+        Login
+        </Link>
+        <Link className="signup" to="/signup">
+        Signup
+        </Link>
+      </>
+    );
+  };
+
   return (
     <HeaderMain dark={true}>
       <div className="left">
@@ -32,12 +59,7 @@ const Header = (): JSX.Element => {
         <Link to="/protected">
           Protected
         </Link>
-        <Link className="login" to="/login">
-          Login
-        </Link>
-        <Link className="signup" to="/signup">
-          Signup
-        </Link>
+        {generateNavLinks()}
       </div>
     </HeaderMain>
   );
