@@ -19,6 +19,7 @@ import PrivateRoute from "./components/PrivateRoute";
 
 // Home page
 import HomePage from "./home";
+import Contact from "./contact/Contact";
 
 const App = (): JSX.Element => {
   return (
@@ -43,6 +44,7 @@ const App = (): JSX.Element => {
                 <Route exact path="/signup">
                   <Signup />
                 </Route>
+                <Route exact path="/contact" component={Contact} />
                 <Route path="/" component={HomePage} />
               </Switch>
             </div>
