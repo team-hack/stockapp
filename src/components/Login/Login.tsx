@@ -14,7 +14,7 @@ import {
   LoginInput
 } from './LoginStyled'
 
-const Login = () => {
+const Login: React.FC = () => {
   const formState: User = {
     email: '',
     password: ''

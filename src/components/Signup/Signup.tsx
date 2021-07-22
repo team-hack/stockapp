@@ -8,7 +8,7 @@ import { useAuth } from "../../context/AuthProvider";
 import type User from "../../types/User";
 import "./Signup.css";
 
-const Signup = () => {
+const Signup: React.FC = () => {
   const formState: User = {
     email: '',
     password: ''
