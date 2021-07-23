@@ -9,7 +9,7 @@ import "./header.styles.css";
 
 // }
 
-const Header = () => {
+const Header: React.FC = () => {
   const data = [
     { id: 1, title: "Day" },
     { id: 2, title: "Week" },
