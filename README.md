@@ -68,3 +68,13 @@ src/
 ### Installing SSH
 
 First step make sure you have a ssh key. If you are unsure you can use this [tutorial](https://gorails.com/setup/osx/11.0-big-sur#git) to get you started. 
+
+Next run the following commands in your terminal:
+```sh
+$ git clone git@github.com:team-hack/stockapp.git
+$ cd stockapp
+$ npm install
+$ npm start
+```
+
+You should now be able to preview the stock app at: http://localhost:3000/
