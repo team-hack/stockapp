@@ -76,5 +76,4 @@ $ cd stockapp
 $ npm install
 $ npm start
 ```
-
 You should now be able to preview the stock app at: http://localhost:3000/
