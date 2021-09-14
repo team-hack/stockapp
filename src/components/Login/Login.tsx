@@ -7,6 +7,7 @@ import React, {
 import { useAuth } from "../../context/AuthProvider";
 import type User from "../../types/User";
 import './Login.css'
+import { useHistory } from "react-router-dom";
 
 import {
   LoginForm,
@@ -22,6 +23,7 @@ const Login: React.FC = () => {
 
   const [form, setForm] = useState(formState);
   const auth = useAuth();
+  const history = useHistory();
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -34,6 +36,7 @@ const Login: React.FC = () => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     auth.login( form );
+    history.push("/");
   };
 
   return (

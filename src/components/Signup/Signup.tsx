@@ -7,6 +7,7 @@ import React, {
 import { useAuth } from "../../context/AuthProvider";
 import type User from "../../types/User";
 import "./Signup.css";
+import { useHistory } from "react-router-dom";
 
 const Signup: React.FC = () => {
   const formState: User = {
@@ -16,6 +17,7 @@ const Signup: React.FC = () => {
 
   const [form, setForm] = useState(formState);
   const auth = useAuth();
+  const history = useHistory();
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -29,6 +31,7 @@ const Signup: React.FC = () => {
     // prevent page reload
     event.preventDefault()
     auth.signup( form );
+    history.push("/");
   }
 
   return (
